@@ -246,3 +246,19 @@ header{
     width: 100%;
     height: 430px;
 }
+.menu-grid-title{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.menu-grid-price{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #979797;
+}
+.menu-grid-btn{
+    text-align: center;
+}
