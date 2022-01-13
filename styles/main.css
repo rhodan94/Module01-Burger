@@ -201,12 +201,12 @@ header{
     text-transform: uppercase;
     text-decoration: none;
 }
-.menu-header, .menu-extra-header{
+.menu-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu-title, .menu-extra-title{
+.menu-title{
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
