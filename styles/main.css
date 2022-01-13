@@ -201,12 +201,12 @@ header{
     text-transform: uppercase;
     text-decoration: none;
 }
-.menu-header{
+.menu-header, .menu-extra-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu-title{
+.menu-title, .menu-extra-title{
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
@@ -251,14 +251,51 @@ header{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 30px;
+    margin-top: 23px;
+    margin-bottom: 0px;
 }
 .menu-grid-price{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    color: #979797;
+    color: #979797;    
+    margin-top: 10px;
+    margin-bottom: 21px;
+    
 }
 .menu-grid-btn{
+    background: #FBB731;
+    border-radius: 5px;
+    border: none;
+    color: #1E2F40;
+    font-weight: 700;
+    Width: 152px;
+    height: 38px;
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 30px; 
+    margin-left: 30%;    
+    position: relative;   
+}
+.menu-grid-text{
+    padding: 11px 30px 10px 53px;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+}
+.menu-grid-price{
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+.menu-grid-icon{
+    padding: 9px 99px 6px 23px;
+    position: absolute;
+}
+.menu{
+    margin-bottom: 37px;
 }
