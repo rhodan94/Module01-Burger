@@ -201,12 +201,12 @@ header{
     text-transform: uppercase;
     text-decoration: none;
 }
-.menu-header{
+.menu-header, .menu-extra-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu-title{
+.menu-title, .menu-extra-title{
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
@@ -226,18 +226,19 @@ header{
     background-repeat: no-repeat;
     background-position: 89% center;
 }
-.menu-grid{
+.menu-grid, .menu-extra-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap:50px 20px;
+    margin-bottom: 66px;
 }
-.menu-grid-cover{
+.menu-grid-cover, .menu-extra-grid-cover{
     width: 100%;
     height: 430px;
     position: relative;
     overflow: hidden;
 }
-.menu-grid-cover img{
+.menu-grid-cover img,.menu-extra-grid-cover img{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -246,7 +247,7 @@ header{
     width: 100%;
     height: 430px;
 }
-.menu-grid-title{
+.menu-grid-title, .menu-extra-grid-title{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
@@ -254,7 +255,7 @@ header{
     margin-top: 23px;
     margin-bottom: 0px;
 }
-.menu-grid-price{
+.menu-grid-price, .menu-extra-grid-price{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -264,7 +265,7 @@ header{
     margin-bottom: 21px;
     
 }
-.menu-grid-btn{
+.menu-grid-btn, .menu-extra-grid-btn{
     background: #FBB731;
     border-radius: 5px;
     border: none;
@@ -276,26 +277,78 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    margin-bottom: 30px; 
     margin-left: 30%;    
     position: relative;   
 }
-.menu-grid-text{
+.menu-grid-text, .menu-extra-grid-text{
     padding: 11px 30px 10px 53px;
-    font-size: 14px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;    
     font-weight: 700;
     position: absolute;
 }
-.menu-grid-price{
-    font-size: 20px;
-    font-family: 'Nunito Sans', sans-serif;
+.menu-grid-price, .menu-extra-grid-price{
+    font-size: 20px;    
     font-weight: 700;
 }
-.menu-grid-icon{
+.menu-grid-icon, .menu-extra-grid-icon{
     padding: 9px 99px 6px 23px;
     position: absolute;
 }
-.menu{
-    margin-bottom: 37px;
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 140px;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    margin-top: 0;
+}
+.footer-item li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-tel ul {
+    font-size: 20px;
+    color: #FBB731;
+    font-weight: 900;
+    margin-top: 0px;
+}
+.footer-tel li {
+    margin-bottom: 12px;
+}
+.footer-list{
+    padding-left: 0;
+    list-style-type: none;
+
 }
