@@ -19,7 +19,12 @@ header{
     padding-top: 26px;
     padding-bottom: 22px;
 }
-
+.header-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 77%;
+}
 .header-logo{
     display: block;
     background-image: url(../images/logo.svg);
@@ -193,13 +198,18 @@ header{
     border-radius: 5px;
     color: #1E2F40;
     font-weight: 700;
-    Width: 170px;
-    Height: 58px;
+    Width: 168px;
+    Height: 56px;
     font-size: 14px;
     line-height: 59px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    border: 1px solid #FBB731; 
+}
+.banner-link:hover{
+    background: transparent;
+    color:#FBB731; 
 }
 .menu-header, .menu-extra-header{
     display: flex;
