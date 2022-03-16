@@ -202,6 +202,7 @@ header{
     line-height: 59px;
     text-align: center;
     border: 1px solid #FBB731; 
+    transition: 0.2s;
 }
 .banner-link:hover{
     background: transparent;
@@ -372,7 +373,28 @@ header{
 .footer-list{
     padding-left: 0;
     list-style-type: none;
-
+}
+.button-up{
+    background-color: #FBB731;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1E2F40;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+.button-up:hover{
+    background-color: #f37335;
+}
+.button-up.hidden{
+    opacity: 0;
+}
+.button-up.visible{
+    opacity: 1;
 }
 /* index style*/
 .main{
