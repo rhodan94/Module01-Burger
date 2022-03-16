@@ -157,15 +157,13 @@ header{
 .banner-box{
     background-image: url(../images/burger-banner.png);
     background-size:cover;
+    background-repeat: no-repeat;
     background-position: center center;
     padding: 100px 727px 100px 100px;
     color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 68px;
 }
-.banner-title{
-    
+.banner-title{    
     display: flex;
     flex-direction: column;
     font-weight: 900;
@@ -193,18 +191,16 @@ header{
     line-height: 23px;
     margin-top: 7px;
 }
-.banner-link{
+.banner-link{    
+    font-size: 14px;
+    padding: 20px 27px;
+    text-transform: uppercase;
+    text-decoration: none;    
+    color: #1E2F40;
     background: #FBB731;    
     border-radius: 5px;
-    color: #1E2F40;
-    font-weight: 700;
-    Width: 168px;
-    Height: 56px;
-    font-size: 14px;
     line-height: 59px;
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
     border: 1px solid #FBB731; 
 }
 .banner-link:hover{
