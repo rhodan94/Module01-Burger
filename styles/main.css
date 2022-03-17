@@ -104,12 +104,12 @@ header{
     color: #FFFFFF;
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    background-position: center center;
-    padding-top: 142px;
+    background-position: center center;    
     padding-bottom: 140px;
     margin-bottom: 140px;
 }
 .breadcrumbs{
+    padding-top: 100px;
     padding-left: 1px;
     margin-top: 3px;
     list-style-type: none;
@@ -158,8 +158,8 @@ header{
     background-image: url(../images/burger-banner.png);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 100px 727px 100px 100px;
+    background-position: 0 center;
+    padding: 100px 100px 120px;
     color: #FFFFFF;
     margin-bottom: 68px;
 }
@@ -208,12 +208,12 @@ header{
     background: transparent;
     color:#FBB731; 
 }
-.menu-header, .menu-extra-header{
+.menu-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu-title, .menu-extra-title{
+.menu-title{
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
@@ -233,19 +233,19 @@ header{
     background-repeat: no-repeat;
     background-position: 89% center;
 }
-.menu-grid, .menu-extra-grid{
+.menu-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:50px 20px;
     margin-bottom: 66px;
 }
-.menu-grid-cover, .menu-extra-grid-cover{
+.menu-grid-cover{
     width: 100%;
     height: 430px;
     position: relative;
     overflow: hidden;
 }
-.menu-grid-cover img,.menu-extra-grid-cover img{
+.menu-grid-cover img{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -254,7 +254,7 @@ header{
     width: 100%;
     height: 430px;
 }
-.menu-grid-title, .menu-extra-grid-title{
+.menu-grid-title{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
@@ -262,7 +262,7 @@ header{
     margin-top: 23px;
     margin-bottom: 0px;
 }
-.menu-grid-price, .menu-extra-grid-price{
+.menu-grid-price{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -272,7 +272,7 @@ header{
     margin-bottom: 21px;
     
 }
-.menu-grid-btn, .menu-extra-grid-btn{
+.menu-grid-btn{
     background: #FBB731;
     border-radius: 5px;
     border: none;
@@ -284,8 +284,9 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    margin-left: 30%;    
-    position: relative;   
+    margin: 0 auto;    
+    position: relative; 
+    transition: 0.2s;  
 }
 .menu-grid-btn:hover{
     background: #F37335;
@@ -293,17 +294,17 @@ header{
 .menu-extra-grid-btn:hover{
     background: #F37335;
 }
-.menu-grid-text, .menu-extra-grid-text{
+.menu-grid-text{
     padding: 11px 30px 10px 53px;
     font-size: 14px;    
     font-weight: 700;
     position: absolute;
 }
-.menu-grid-price, .menu-extra-grid-price{
+.menu-grid-price{
     font-size: 20px;    
     font-weight: 700;
 }
-.menu-grid-icon, .menu-extra-grid-icon{
+.menu-grid-icon{
     padding: 9px 99px 6px 23px;
     position: absolute;
 }
@@ -440,12 +441,21 @@ header{
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 18px 43px;
     display:inline-block;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    border: 1px solid #FBB731; 
+    transition: 0.2s;
 }
+.content-link:hover,
+.promo a:hover{
+    background: transparent;
+    color:#FBB731; 
+}
+
+
 .visual{
     flex-grow: 1;
     display:flex;
@@ -519,4 +529,64 @@ header{
 .promo-right .promo-description{
     max-width: 300px;
     margin-bottom: 20px;
+}
+
+/*responsive*/
+
+@media(min-width:1001px){
+    .footer-list + .footer-list-tel{
+        display: none;
+    }
+}
+@media (max-width: 1000px){
+    .container{
+        max-width: 738px;
+    }
+    .header-logo{
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav{
+        gap: 22px;
+    }
+    .header-item{
+        flex-basis: 90%;
+    }
+    .bg{
+        margin-bottom: 72px;
+    }
+    .banner-box{        
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px ;
+    }
+    .menu-other{
+        overflow: hidden;
+        height: 593px;
+    }
+    .menu-other .menu-grid{
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .menu-other .menu-grid-item{
+        flex: 0 0 281px;
+    }
+    .menu-other .menu-grid-cover,
+    .menu-other .menu-grid-cover img{
+        height: 320px;
+    }
+
+    .footer-tel{
+        display: none;
+    }
+    .footer-list + .footer-list-tel{
+        display: block;
+    }
 }
