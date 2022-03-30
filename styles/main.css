@@ -274,17 +274,13 @@ header{
 .menu-grid-btn{
     background: #FBB731;
     border-radius: 5px;
+    padding: 10px 32px;
     border: none;
-    color: #1E2F40;
-    font-weight: 700;
-    Width: 152px;
-    height: 38px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
     display: flex;
-    margin: 0 auto;    
-    position: relative; 
+    text-transform: uppercase;
+    text-decoration: none;    
+    margin: 0 auto; 
+    gap: 9px;  
     transition: 0.2s; 
     cursor: pointer; 
 }
@@ -295,18 +291,21 @@ header{
     background: #F37335;
 }
 .menu-grid-text{
-    padding: 11px 30px 10px 53px;
+    color: #1e2f40;
     font-size: 14px;    
     font-weight: 700;
-    position: absolute;
 }
 .menu-grid-price{
     font-size: 20px;    
     font-weight: 700;
 }
 .menu-grid-icon{
-    padding: 9px 99px 6px 23px;
-    position: absolute;
+    background-image: url(../images/cart-menu.svg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
 }
 .footer {
     background: #1E2F40;
@@ -318,13 +317,11 @@ header{
 .footer-box{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
     height: 56px;
-}
-.footer-item {
-    flex: 0 0 auto;
 }
 .footer-item h2 {
     font-size: 20px;
@@ -332,6 +329,7 @@ header{
     text-transform: uppercase;
     margin-bottom: 19px;
     margin-top: 0;
+    line-height: 1.5;
 }
 .footer-list li {
     margin-bottom: 9px;
@@ -579,6 +577,7 @@ header{
 /*responsive*/
 
 @media(min-width:1001px){
+    
     .footer-list + .footer-list-tel{
         display: none;
     }
@@ -589,7 +588,8 @@ header{
     }
 }
 @media (max-width: 1000px){
-    .container{
+    /*menu*/
+    .container, .wrapper{
         max-width: 738px;
     }
     .header-logo{
@@ -639,6 +639,81 @@ header{
     .footer-list + .footer-list-tel{
         display: block;
     }
+    /*index.html*/
+    .content {
+        flex: 0 0 411px;
+        padding-top: 43px;
+        padding-bottom: 123px;
+        padding-left: 13px;        
+    }
+    .content-title{
+        margin-top: 0px;
+        font-size: 86px;
+        font-weight: 800;
+        line-height: 100.65px;
+        margin-bottom: 23px;
+    }
+    .content-title span{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .content-text{
+        font-size: 13.3px;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        max-width: 405px;
+    }
+    .content-link{
+        padding: 16px 39px;
+        font-size:  13px;
+    }
+    .main img {
+        width: 496px;
+        left: -44px;
+        bottom: -85px;
+    }
+    .visual-bg {
+        width: 198px;
+    }
+    .promo {
+        padding-top: 109px;
+    }
+    .promo-left {
+        padding: 44px 30px;
+    }
+    .promo-left .promo-description {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    .sale {
+        padding: 5px 20px;    
+    }
+    .cost {
+        margin-top: 3px;
+    }
+    .promo{
+        padding-bottom: 0;
+    }
+    .promo-right {
+        padding: 62px 31px;
+    }
+    .promo-right .promo-description {
+        margin-bottom: 13px;
+        font-size: 14px;        
+    }
+    .promo a {
+        padding: 16px 36px;
+    }
+    .footer {
+        padding-top: 64px;
+    }
+    .footer-item:nth-child(2) {
+        margin-left: 7px;
+    }
+    .footer-item:nth-child(3) {
+        margin-left: 7px;
+    }
+    
 }
 @media(max-width: 765px){
     nav{
@@ -647,9 +722,24 @@ header{
     .header{
         gap: 21px;
     }
+    .menu-other .container{
+        padding-right: 0;
+    }
+    .button-up.visible{
+        display: none;
+    }
 }
 
 @media(max-width: 567px){
+    /*menu.html*/
+    .header{
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    .header-logo{
+        width: 116px;
+        height: 37px;
+    }
     .breadcrumbs{
         font-size: 15px;
     }
@@ -661,17 +751,107 @@ header{
     }
     .bg{
         padding: 55px 0;
+        margin-bottom: 33px;
     }
     .banner-box {
         background-position: 17% center;
         padding: 35px 24px 54px;
+        margin-bottom: 40px;
     }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select{
+        font-size: 12px;
+        flex-basis: 136px;
+        padding: 13px 24px 13px 15px;
+        background-position: 91% center;
+    }
+    .menu-header {
+        margin-bottom: 13px;
+    }
+    .menu-grid-cover {
+        height: 56vw;
+    }    
+    .menu-grid-cover img {
+        height: 100%;
+    }
+    .menu-grid-title{
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .menu-grid{
+        gap: 25px 15px;
+        margin-bottom: 39px;
+    }
+    .menu-grid-price{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 13px;
+    }
+    .menu-grid-btn{
+        padding: 10px 21px;
+    }
+    .menu-other {
+        height: 114vw;        
+    }
+    .menu-other .menu-grid {
+        padding-bottom: 25vw;
+    }
+    .menu-other .menu-grid-cover{
+        height: 56vw;
+    }
+    .menu-other .menu-grid-cover img{
+        height: 100%;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 38vw;
+    }    
+    
+    .footer{
+        margin-top: 36px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer-list + .footer-list-tel{
+        display: none;
+    }
+    .footer-tel{
+        display: block;
+    }
+    .footer-box{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+            "logo tel"
+            "link link"
+            "info info";
+        gap: 0;
+    }
+    .footer-item:nth-child(1){
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2){
+        grid-area: link;
+    }
+    .footer-item:nth-child(3){
+        grid-area: info;
+    }
+    .footer-tel{
+        grid-area: tel;
+        text-align: right;
+    }
+    /*index.html*/
 }
+ 
 @media(max-width: 360px){
     .header-logo{
         width: 116px;
         height: 37px;
         background-size: contain;
+    }
+    .menu-grid-title{
+        font-size: 13px;
     }
 }
 @media(max-width: 320px){
