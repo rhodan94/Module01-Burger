@@ -114,7 +114,7 @@ header{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 7px;
+    gap: 7px;    
 }
 .breadcrumbs a:hover{
     color:#FFC725;
@@ -124,6 +124,7 @@ header{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    transition: 0.6s;
 }
 
 .breadcrumbs a::before{
@@ -189,6 +190,7 @@ header{
     font-size: 15px;
     line-height: 23px;
     margin-top: 7px;
+    max-width: 353px;
 }
 .banner-link{    
     font-size: 14px;
@@ -754,9 +756,13 @@ header{
         margin-bottom: 33px;
     }
     .banner-box {
-        background-position: 17% center;
-        padding: 35px 24px 54px;
+        background-position: 20% center;
+        padding: 35px 18px;
         margin-bottom: 40px;
+        
+    }
+    .banner-text{
+        max-width: 248px;
     }
     .menu-title {
         font-size: 27px;
